@@ -22,7 +22,7 @@ export class MyApp {
     });
   }
 
-  openMenu() {
+  /* openMenu() {
    this.menuCtrl.open();
  }
 
@@ -32,5 +32,5 @@ export class MyApp {
 
  toggleMenu() {
    this.menuCtrl.toggle();
- }
+ } */
 }
