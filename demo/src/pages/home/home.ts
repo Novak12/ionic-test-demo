@@ -6,7 +6,7 @@ import { AboutPage } from "../about/about";
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
-})
+})                        //更多样例：https://blog.csdn.net/qq_15096707/article/details/52727672
 export class HomePage {
   RadioOpen: boolean;
   RadioResult;
