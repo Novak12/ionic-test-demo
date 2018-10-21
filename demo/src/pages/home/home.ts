@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import { TranslateService } from "ng2-translate";
+import { AboutPage } from "../about/about";
 
 @Component({
   selector: 'page-home',
@@ -41,5 +42,9 @@ export class HomePage {
     alert.present().then(() => {
       this.RadioOpen = true;
     });
+  }
+
+  gotoAboutPage() {
+    this.navCtrl.push(AboutPage, { test: "hello" });
   }
 }
