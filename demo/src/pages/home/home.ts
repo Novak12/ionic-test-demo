@@ -45,6 +45,7 @@ export class HomePage {
   }
 
   gotoAboutPage() {
-    this.navCtrl.push(AboutPage, { test: "hello" });
+    /* this.navCtrl.push(AboutPage, { test: "hello" }); */
+    this.navCtrl.push('NewsPage', { test: "hello" })
   }
 }
