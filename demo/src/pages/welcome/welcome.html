@@ -1,0 +1,20 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'HOME.TITLE'|translate}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button (click)="changeLanguage()" ion-button color="light">设置语言</button>
+  <h2>{{ 'HOME.CONTENT' | translate }}</h2>
+  <button (click)="gotoAboutPage()" ion-button color="light">about</button>
+</ion-content>
