@@ -12,7 +12,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-//https://www.cnblogs.com/huangenai/p/6868173.html   translate的样例
 
 @NgModule({
   declarations: [
