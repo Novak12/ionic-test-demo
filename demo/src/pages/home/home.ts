@@ -15,6 +15,10 @@ export class HomePage {
 
   }
 
+  ionViewDidLoad() {
+    console.log("ionViewDidLoad HomePage");
+  }
+
   changeLanguage() {
     this.langs = [{ language: "English", type: "en" }, { language: "简体中文", type: "zh" },
     { language: "繁体中文", type: "tw" }];
