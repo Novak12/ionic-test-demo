@@ -2,16 +2,20 @@ import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import { TranslateService } from "ng2-translate";
 import { AboutPage } from "../about/about";
+import { DataService } from "../../service/data.service";
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  providers: [DataService]
 })                        //更多样例：https://blog.csdn.net/qq_15096707/article/details/52727672
 export class HomePage {
   RadioOpen: boolean;
   RadioResult;
   langs: [{}, {}, {}];
-  constructor(public navCtrl: NavController, public alerCtrl: AlertController, public translate: TranslateService) {
+  rxjsData: string;
+  constructor(public navCtrl: NavController, public alerCtrl: AlertController,
+    public translate: TranslateService, private dataService: DataService) {
 
   }
 
@@ -51,5 +55,11 @@ export class HomePage {
   gotoAboutPage() {
     /* this.navCtrl.push(AboutPage, { test: "hello" }); */
     this.navCtrl.push('NewsPage', { test: "hello" })
+  }
+
+  getData() {
+    this.dataService.getData().subscribe(
+      data => this.rxjsData = data
+    )
   }
 }
