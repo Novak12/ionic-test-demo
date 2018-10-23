@@ -17,6 +17,10 @@ output:子组件通过出发时间向父组件传输数据<br/>
 
 7.@ViewChild()是什么意思，如何使用？<br/>
 
-8.subscribe的用法
+8.subscribe的用法:<br/>
+  关于promise与subscribe的区别：https://zhuanlan.zhihu.com/p/20531896 <br/>
+  observable的概念：https://segmentfault.com/a/1190000005051034 <br/>
+
+9.
 
 
