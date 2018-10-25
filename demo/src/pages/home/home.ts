@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import { TranslateService } from "ng2-translate";
-import { AboutPage } from "../about/about";
 import { DataService } from "../../service/data.service";
 
 @Component({
@@ -61,5 +60,9 @@ export class HomePage {
     this.dataService.getData().subscribe(
       data => this.rxjsData = data
     )
+  }
+
+  scan() {
+    this.navCtrl.push("ScanPage");
   }
 }

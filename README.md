@@ -25,4 +25,6 @@
     在angular中，一个service通常是一个被标记为@Injectable()的类，表示该类可以被一个注入器实例化。<br/>
     在使用service时，需要的component或NgModule中的provider中进行声明，否则无法使用<br/>
 
+* 10.学习使用二维码扫描插件-QRScanner <br/>
+
 
